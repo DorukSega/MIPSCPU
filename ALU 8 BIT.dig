@@ -1,18 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <circuit>
   <version>2</version>
-  <attributes/>
+  <attributes>
+    <entry>
+      <string>shapeType</string>
+      <shapeType>LAYOUT</shapeType>
+    </entry>
+    <entry>
+      <string>Label</string>
+      <string>ALU</string>
+    </entry>
+    <entry>
+      <string>romContent</string>
+      <romList>
+        <roms/>
+      </romList>
+    </entry>
+    <entry>
+      <string>Height</string>
+      <int>8</int>
+    </entry>
+    <entry>
+      <string>Width</string>
+      <int>8</int>
+    </entry>
+  </attributes>
   <visualElements>
     <visualElement>
       <elementName>Multiplexer</elementName>
       <elementAttributes>
         <entry>
-          <string>Bits</string>
-          <int>8</int>
-        </entry>
-        <entry>
           <string>Selector Bits</string>
           <int>4</int>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
         </entry>
       </elementAttributes>
       <pos x="-440" y="260"/>
@@ -21,16 +44,16 @@
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
+          <string>rotation</string>
+          <rotation rotation="1"/>
+        </entry>
+        <entry>
           <string>Label</string>
           <string>ALUop</string>
         </entry>
         <entry>
           <string>Bits</string>
           <int>4</int>
-        </entry>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="1"/>
         </entry>
       </elementAttributes>
       <pos x="-420" y="780"/>
@@ -83,16 +106,16 @@
       <elementName>Div</elementName>
       <elementAttributes>
         <entry>
+          <string>Signed</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
           <string>Label</string>
           <string>DIVS</string>
         </entry>
         <entry>
           <string>Bits</string>
           <int>8</int>
-        </entry>
-        <entry>
-          <string>Signed</string>
-          <boolean>true</boolean>
         </entry>
       </elementAttributes>
       <pos x="-760" y="420"/>
@@ -429,12 +452,12 @@
       <elementName>Multiplexer</elementName>
       <elementAttributes>
         <entry>
-          <string>Bits</string>
-          <int>8</int>
-        </entry>
-        <entry>
           <string>Selector Bits</string>
           <int>2</int>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
         </entry>
       </elementAttributes>
       <pos x="-260" y="620"/>
@@ -447,12 +470,12 @@
           <int>2</int>
         </entry>
         <entry>
-          <string>Inputs</string>
-          <int>4</int>
-        </entry>
-        <entry>
           <string>Data</string>
           <data>4*0,1,2,3</data>
+        </entry>
+        <entry>
+          <string>Inputs</string>
+          <int>4</int>
         </entry>
       </elementAttributes>
       <pos x="-320" y="740"/>
@@ -498,6 +521,44 @@
         </entry>
       </elementAttributes>
       <pos x="-380" y="740"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Comparator</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>ZERO?</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-300" y="320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>0</long>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-300" y="320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>ZERO</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-220" y="340"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -590,6 +651,14 @@
       <p2 x="-440" y="340"/>
     </wire>
     <wire>
+      <p1 x="-340" y="340"/>
+      <p2 x="-300" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="-240" y="340"/>
+      <p2 x="-220" y="340"/>
+    </wire>
+    <wire>
       <p1 x="-1060" y="980"/>
       <p2 x="-780" y="980"/>
     </wire>
@@ -655,7 +724,7 @@
     </wire>
     <wire>
       <p1 x="-400" y="420"/>
-      <p2 x="-320" y="420"/>
+      <p2 x="-340" y="420"/>
     </wire>
     <wire>
       <p1 x="-700" y="420"/>
@@ -668,6 +737,10 @@
     <wire>
       <p1 x="-1040" y="420"/>
       <p2 x="-760" y="420"/>
+    </wire>
+    <wire>
+      <p1 x="-340" y="420"/>
+      <p2 x="-320" y="420"/>
     </wire>
     <wire>
       <p1 x="-1040" y="1060"/>
@@ -852,6 +925,10 @@
     <wire>
       <p1 x="-340" y="780"/>
       <p2 x="-340" y="800"/>
+    </wire>
+    <wire>
+      <p1 x="-340" y="340"/>
+      <p2 x="-340" y="420"/>
     </wire>
     <wire>
       <p1 x="-600" y="440"/>
