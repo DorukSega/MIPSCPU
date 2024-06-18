@@ -1,0 +1,6 @@
+//slt beq
+      my_rom[0] = 16'h7054;
+      my_rom[1] = 16'h708a;
+      my_rom[2] = 16'h229a;
+      my_rom[3] = 16'h50c1;
+      my_rom[4] = 16'h7045;

@@ -1,0 +1,8 @@
+// jal proc
+      my_rom[0] = 16'h7101;
+      my_rom[1] = 16'h7142;
+      my_rom[2] = 16'h4004;
+      my_rom[3] = 16'h3007;
+      my_rom[4] = 16'h0977;
+      my_rom[5] = 16'h0e04;
+      my_rom[6] = 16'h7045;

@@ -1,0 +1,6 @@
+// load store word
+      my_rom[0] = 16'h724a;
+      my_rom[1] = 16'hd08f;
+      my_rom[2] = 16'hc482;
+      my_rom[3] = 16'hf440;
+      my_rom[4] = 16'he4c0;
