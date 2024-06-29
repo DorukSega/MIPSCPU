@@ -1,4 +1,4 @@
-// jal proc
+// jal proc 
       my_rom[0] = 16'h7101;
       my_rom[1] = 16'h7142;
       my_rom[2] = 16'h4004;
